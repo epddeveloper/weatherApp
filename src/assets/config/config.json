@@ -1,7 +1,8 @@
 {
-  "apiBaseUrl": "https://api.openweathermap.org/data/2.5/",
-  "apiCurrentWeatherUrlPart": "weather?",
-  "apiWeatherForecastUrlPart": "onecall?",
+  "apiBaseUrl": "https://api.openweathermap.org",
+  "apiCurrentWeatherUrlPart": "/data/2.5/weather?",
+  "apiWeatherForecastUrlPart": "/data/2.5/onecall?",
+  "apiIcon": "http://openweathermap.org/img/wn/${icon}@2x.png",
   "apiKey": "4a990db983673f572783071869994b99",
   "cities": [
     {

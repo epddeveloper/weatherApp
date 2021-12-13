@@ -19,12 +19,10 @@ describe('ApiWeatherService', () => {
     TestBed.configureTestingModule({
       imports: [ HttpClientTestingModule ]
     });
-    //Instantaites HttpClient, HttpTestingController and EmployeeService
     httpClient = TestBed.inject(HttpClient);
     httpTestingController = TestBed.inject(HttpTestingController);
 
     service = TestBed.inject(ApiWeatherService);
-    // service = TestBed.inject(ApiWeatherService);
     configService =TestBed.inject(AppConfigService);
   });
 

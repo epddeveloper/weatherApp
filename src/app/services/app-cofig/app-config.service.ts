@@ -32,4 +32,7 @@ export class AppConfigService {
   getCitiesList(): ICity[] {
     return this.appConfig.cities;
   }
+  getIconUrl(): string {
+    return this.appConfig.apiIcon;
+  }
 }

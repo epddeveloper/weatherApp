@@ -1,6 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {ICity} from '../interfaces/icity';
-import {ApiWeatherService} from '../services/api-weather/api-weather.service';
 import {AppConfigService} from '../services/app-cofig/app-config.service';
 import {WeatherDetailsComponent} from "../weather-details/weather-details.component";
 
@@ -12,7 +11,7 @@ import {WeatherDetailsComponent} from "../weather-details/weather-details.compon
 export class WeatherComponent implements OnInit {
 
   cities: ICity[];
-  @ViewChild(WeatherDetailsComponent) weatherDetails:WeatherDetailsComponent;
+  @ViewChild(WeatherDetailsComponent) weatherDetails: WeatherDetailsComponent;
 
   constructor(private appConfig: AppConfigService) {
   }
