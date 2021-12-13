@@ -1,0 +1,33 @@
+{
+  "apiBaseUrl": "https://api.openweathermap.org/data/2.5/",
+  "apiCurrentWeatherUrlPart": "weather?",
+  "apiWeatherForecastUrlPart": "onecall?",
+  "apiKey": "4a990db983673f572783071869994b99",
+  "cities": [
+    {
+      "name": "London",
+      "lat": 51.5085,
+      "lon": -0.1257
+    },
+    {
+      "name": "Berlin,DE",
+      "lat": 52.5244,
+      "lon": 13.4105
+    },
+    {
+      "name": "Warsaw",
+      "lat": 52.2298,
+      "lon": 21.0118
+    },
+    {
+      "name": "Paris",
+      "lat": 48.8534,
+      "lon": 2.3488
+    },
+    {
+      "name": "Cracow",
+      "lat": 43.7424,
+      "lon": -82.8199
+    }
+  ]
+}

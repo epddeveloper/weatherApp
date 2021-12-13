@@ -1,0 +1,5 @@
+<div class="app-weather__list">
+  <app-city-item *ngFor="let city of cities" [city]="city" (click)="showForecastForCity(city)"></app-city-item>
+</div>
+
+<app-weather-details></app-weather-details>

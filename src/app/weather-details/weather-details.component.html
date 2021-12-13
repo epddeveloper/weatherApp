@@ -1,0 +1,30 @@
+<div *ngIf="city">
+
+  <h3 class="app-weather-details__header">Forecast for {{ city.name}}</h3>
+
+  <p-table [value]="forecast.hourly" responsiveLayout="scroll"  [scrollable]="true" scrollHeight="400px">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Date</th>
+        <th>Temperature</th>
+        <th>Wind speed</th>
+        <th>Weather</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-cityItem>
+      <tr>
+        <td>
+          {{formatDate(cityItem.dt) | date: 'dd.MM.yyyy  HH:mm'}}
+        </td>
+        <td>{{cityItem.temp}} ^C</td>
+        <td>{{cityItem.wind_speed}} m/s</td>
+        <td>
+          <img src="http://openweathermap.org/img/wn/{{cityItem.weather[0].icon}}@2x.png" alt="{{cityItem.weather[0].description}}" title="{{cityItem.weather[0].description}}"></td>
+
+      </tr>
+    </ng-template>
+  </p-table>
+
+</div>
+
+
